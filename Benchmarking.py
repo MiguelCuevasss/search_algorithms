@@ -20,3 +20,11 @@ def test_linear_search_benchmark(benchmark):
         rounds=5,
         iterations=5
     )
+
+def test_binary_search_benchmark(benchmark):
+    benchmark.pedantic(
+        benchmark_search,
+        args=(binary_search,),
+        rounds=5,
+        iterations=5
+    )
